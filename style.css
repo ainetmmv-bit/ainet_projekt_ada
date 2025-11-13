@@ -4,26 +4,31 @@
    die später im Code mit var(--name) wiederverwendet werden können.
 */
 :root {
+
     /* Schriftart für Fließtext */
-    --text-schriftart: Inter;
+    --text-schriftart:inder-regular {
+        font-family: "Inder", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
 
     /* Schriftart für Überschriften */
-    --ueberschriften: Momo Trust Sans;
-
+    --ueberschriften:
     /* Hauptfarbe für Elemente oder Überschriften */
-    --haupt-farbe: #22577A;
+    --haupt-farbe:;
 
     /* Hintergrundfarbe der Seite */
-    --hintergrund-farbe: #fff;
+    background-color: #fde6f4;
 
     /* Standard-Schriftfarbe */
-    --schrift-farbe: #000;
+    color: black;
 
     /* Zweitfarbe (z. B. für Akzente oder Hover-Effekte) */
-    --zweit-farbe: #57CC99;
+    --zweit-farbe:white;
 
     /* Dritte Farbe für zusätzliche Akzente */
-    --dritt-farbe: #80ED99;
+    --dritt-farbe:black;
 }
 
 /* Setzt alle Abstände und Box-Modelleinstellungen auf Standardwerte zurück */
@@ -50,31 +55,53 @@ body {
     background-color: var(--hintergrund-farbe);
 }
 
+.gericht {
+    background-color: #fffbfb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+    border-radius: 15px;
+}
+
 /* Gemeinsames Styling für alle Überschriften (h1–h6) */
-h1, h2, h3, h4, h5, h6 {
+h1 {
+    text-align: center;
+}
+
+
+h3{
+    text-align: center;
+}
+h4{
+    text-align: center;
+}
+
+/* h6 {
     /* Verwendet spezielle Überschriftenschriftart */
-    font-family: var(--ueberschriften), sans-serif;
+    /* font-family: var(--ueberschriften), sans-serif; */
 
     /* Textfarbe der Überschriften */
-    color: var(--haupt-farbe);
+    /* color: var(--haupt-farbe); */
 
     /* Abstand nach unten, damit Überschrift nicht zu dicht am Text klebt */
-    margin-bottom: 3%;
+    /* margin-bottom: 3%; */
 
     /* Leichter Abstand von der linken Seite */
-    margin-left: 10px;
-}
+    /* margin-left: 10px; */
+/* } */ 
 
 /* Haupt-Navigationsleiste am oberen Rand der Seite */
 .main-navbar {
     /* Nutzt Flexbox, um Elemente nebeneinander anzuordnen */
     display: flex;
-
+    flex-direction: row-reverse;
     /* Platzierung: Abstand zwischen linkem und rechtem Bereich (z. B. Logo und Menü) */
     justify-content: space-between;
 
     /* Außenabstand rundherum */
     margin: 1%;
+
 
     /* Innenabstände links und rechts */
     padding-left: 2%;
@@ -129,13 +156,17 @@ a {
 /* Großer Banner-Bereich mit Hintergrundbild */
 .banner {
     /* Mindesthöhe des Banners */
-    min-height: 600px;
+    min-height: 300px;
+    border-radius: 15px;
+    width: 90%;
+    text-align: center;
+    margin-left: 80px;
 
     /* Setzt das Hintergrundbild */
-    background-image: url("bilder/bg-img.jpg");
+    background-color: #fffbfb;
 
     /* Bild soll den gesamten Bereich ausfüllen */
-    background-size: cover;
+    background-size: 100px;
 
     /* Bild wird zentriert dargestellt */
     background-position: center;
@@ -145,7 +176,8 @@ a {
 
     /* Inhalt wird per Flexbox zentriert */
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -287,4 +319,93 @@ footer {
         /* Fügt Abstand zwischen den Elementen hinzu */
         gap: 1rem;
     }
+}
+
+/* Slideshow */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1200px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
