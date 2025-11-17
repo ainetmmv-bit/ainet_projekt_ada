@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--    Einbinden von Google Font Schriftarten hier:-->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&family=Inder&family=Noto+Serif+Hebrew:wght@100..900&family=Noto+Serif+Telugu:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!--    Stylesheet mit HTML verbinden-->
     <link rel="stylesheet" href="../style.css">
     <title>Kontakt</title>
@@ -30,51 +30,50 @@
         </nav>
     </header>
     <main>
-        <h1>Kontakt</h1>
+        <h1 class="gericht">Kontakt</h1>
+
         <form>
-            <label for="Vorname">Vorname:</label>
-        <input type="text" id="Vorname" placeholder="Susanna" />
+            <h1>
+                Contact Us
+            </h1>
+           <div>
+                Max Mustermann <br>
+					Mustergasse 6 Top4 <br>
+					8010 Graz <br>
+					Österreich
+				</p>
+				<p>
+					Tel: +43 (0)316/12345678 <br> Fax: + 43 (0)316/123456789 <br> E-Mail: <a
+						href="mailto:max.mustermann%40domain.at">max.mustermann@domain.at</a> 
+           </div>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="test@test.com" />
 
-        <label for="Nachname">Nachname:</label>
-        <input type="text" id="Nachname" placeholder="Meier" />
+            <label for="tel">Telefon:</label>
+            <input type="tel" id="tel" placeholder="+43 XXX XX XX XXX" />
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" placeholder="test@test.com" />
+            <label for="nachricht">Nachricht</label>
+            <textarea rows="4" id="nachricht" placeholder="Deine Nachricht"></textarea>
 
-        <label for="tel">Telefon:</label>
-        <input type="tel" id="tel" placeholder="+43 XXX XX XX XXX" />
+            <div class="data-ok">
+                <input type="checkbox" id="data-ok" name="Datenschnutz">
+                <label for="data-ok">Datenschutz ok</label>
+            </div>
 
-        <label for="nachricht">Nachricht</label>
-        <textarea rows="4" id="nachricht" placeholder="Deine Nachricht"></textarea>
-
-        <div class="data-ok">
-            <input type="checkbox" id="data-ok" name="Datenschnutz">
-            <label for="data-ok">Datenschutz ok</label>
-        </div>
-
-        <button type="submit">Absenden</button>
+            <button type="submit">Absenden</button>
         </form>
-        
-        <!DOCTYPE html>
-        <html lang="en">
 
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="stylesheet" href="style.css">
-            <title>Kontaktformular</title>
-        </head>
+    
 
-        </html>
-
-
-        <iframe
+        <iframe class="maps"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d84950.40737995727!2d14.146727797265617!3d48.289382700000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4773979552bbeb53%3A0xf4878d6162a5f6a0!2sBFI%20-%20Berufsf%C3%B6rderungsinstitut%20O%C3%96!5e0!3m2!1sde!2sat!4v1763052623941!5m2!1sde!2sat"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            width="800" height="700" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 
     </main>
+
     <footer>
         <p>Copyright @Lorem Ipsum <span id="current-year"></span></p>
         <nav class="footer-navbar">
