@@ -1,42 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--    Einbinden von Google Font Schriftarten hier:-->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-          rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
     <!--    Stylesheet mit HTML verbinden-->
     <link rel="stylesheet" href="../style.css">
     <title>Kontakt</title>
 </head>
+
 <body>
-<header>
-    <nav class="main-navbar">
-        <img id="logo" src="../bilder/frog-logo.png" alt="frosch"/>
-        <ul>
-            <li><a href="../index.html">Startseite</a></li>
-            <li><a href="../index.html#ueber-mich">Über Mich</a></li>
-            <li><a href="/seiten/kontakt.html">Kontakt</a></li>
-        </ul>
-    </nav>
-</header>
-<main>
-    <h1>Kontakt</h1>
-    <!--Kontaktformular hier-->
-    <form></form>
-    <!--Google Maps Karte?-->
-    <p>Kontaktinformationen</p>
-</main>
-<footer>
-    <p>Copyright @Lorem Ipsum <span id="current-year"></span></p>
-    <nav class="footer-navbar">
-        <ul>
-            <li><a href="./impressum.html">Impressum</a></li>
-            <li><a href="#">Datenschutz</a></li>
-        </ul>
-    </nav>
-</footer>
-<script src="../index.js"></script>
+    <header>
+        <nav class="main-navbar">
+
+            <ul>
+                <li class="boxen"><a href="../index.html">STARTSEITE</a></li>
+                <li class="boxen"><a href="../seiten/gericht.html">GERICHTE</a></li>
+                <li class="boxen"><a href="../seiten/dessert.html">DESSERT'S</li>
+
+            </ul>
+            <ul>
+                <li class="top-boxen"><a href="../seiten/kontakt.html">KONTAKT</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Kontakt</h1>
+        <form>
+            <label for="Vorname">Vorname:</label>
+        <input type="text" id="Vorname" placeholder="Susanna" />
+
+        <label for="Nachname">Nachname:</label>
+        <input type="text" id="Nachname" placeholder="Meier" />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="test@test.com" />
+
+        <label for="tel">Telefon:</label>
+        <input type="tel" id="tel" placeholder="+43 XXX XX XX XXX" />
+
+        <label for="nachricht">Nachricht</label>
+        <textarea rows="4" id="nachricht" placeholder="Deine Nachricht"></textarea>
+
+        <div class="data-ok">
+            <input type="checkbox" id="data-ok" name="Datenschnutz">
+            <label for="data-ok">Datenschutz ok</label>
+        </div>
+
+        <button type="submit">Absenden</button>
+        </form>
+        
+        <!DOCTYPE html>
+        <html lang="en">
+
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="style.css">
+            <title>Kontaktformular</title>
+        </head>
+
+        </html>
+
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d84950.40737995727!2d14.146727797265617!3d48.289382700000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4773979552bbeb53%3A0xf4878d6162a5f6a0!2sBFI%20-%20Berufsf%C3%B6rderungsinstitut%20O%C3%96!5e0!3m2!1sde!2sat!4v1763052623941!5m2!1sde!2sat"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+    </main>
+    <footer>
+        <p>Copyright @Lorem Ipsum <span id="current-year"></span></p>
+        <nav class="footer-navbar">
+            <ul>
+                <li><a href="../seiten/impressum.html">Impressum</a></li>
+                <li><a href="#">Datenschutz</a></li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="../index.js"></script>
 </body>
+
 </html>
