@@ -11,6 +11,7 @@
     <!--    Stylesheet mit HTML verbinden-->
     <link rel="stylesheet" href="../style.css">
     <title>Traditionelle Küche</title>
+
 </head>
 
 <body>
@@ -51,7 +52,7 @@
                             <div id="popup-r-eclair" class="modal">
                                 <div class="modal-content">
                                     <span id="r-eclair-close" class="close">&times;</span>
-                                    <a href="">Klicke auf das Rezept für Eclair</a>
+                                    <a href="https://www.gutekueche.at/eclair-rezept-5657">Klicke auf das Rezept für Eclair</a>
                                 </div>
                             </div>
 
@@ -60,7 +61,7 @@
                             <div id="popup-v-eclair" class="modal">
                                 <div class="modal-content">
                                     <span id="v-eclair-close" class="close">&times;</span>
-                                    <a href="">Klicke für das Video für Eclair</a>
+                                    <a href="https://youtu.be/mcW_ud9tBpk?si=J7TGmeFBGUlNr1xv">Klicke für das Video für Eclair</a>
                                 </div>
                             </div>
                         </div>
@@ -78,19 +79,25 @@
 
                             </p>
                         </div>
-                        <button class="knopf" onclick="general()">Rezept</button>
-                        <script>
-                            function general() {
-                                alert('rezept')
-                            }
 
-                        </script>
-                        <button class="knopf" onclick="generalvideo()">Video</button>
-                        <script>
-                            function generalvideo() {
-                                alert('video')
-                            }
-                        </script>
+                        <!-- Popup General Rezept -->
+                    <button id="btn-r-general" class="knopf">Rezept</button>
+                    <div id="popup-r-general" class="modal">
+                        <div class="modal-content">
+                            <span id="r-general-close" class="close">&times;</span>
+                            <a href="https://www.chefkoch.de/rs/s0/tort+general/Rezepte.html">Klicke auf das Rezept für General</a>
+                        </div>
+                    </div>
+
+                    <!-- Popup General Video -->
+                    <button id="btn-v-general" class="knopf">Video</button>
+                    <div id="popup-v-general" class="modal">
+                        <div class="modal-content">
+                            <span id="v-general-close" class="close">&times;</span>
+                            <a href="https://youtu.be/6xOy4V2gPB8?si=WzR514T94NlIm402">Klicke für das Video für General</a>
+                        </div>
+                    </div>
+                       
                     </div>
                     <div class="essen">
                         <img src="../bilder-desser/medovik.jpg" class="foto">
@@ -101,19 +108,28 @@
 
                             </p>
                         </div>
-                        <button class="knopf" onclick="medovik()">Rezept</button>
-                        <script>
-                            function medovik() {
-                                alert('rezept')
-                            }
 
-                        </script>
-                        <button class="knopf" onclick="medovikvideo()">Video</button>
-                        <script>
-                            function medovikvideo() {
-                                alert('video')
-                            }
-                        </script>
+                         <!-- Popup Medovik Rezept -->
+                    <button id="btn-r-medovik" class="knopf">Rezept</button>
+                    <div id="popup-r-medovik" class="modal">
+                        <div class="modal-content">
+                            <span id="r-medovik-close" class="close">&times;</span>
+                            <a href="">Klicke auf das Rezept für Medovik</a>
+                        </div>
+                    </div>
+
+                    <!-- Popup medovik Video -->
+                    <button id="btn-v-medovik" class="knopf">Video</button>
+                    <div id="popup-v-medovik" class="modal">
+                        <div class="modal-content">
+                            <span id="v-medovik-close" class="close">&times;</span>
+                            <a href="">Klicke für das Video für Medovik</a>
+                        </div>
+                    </div>
+
+                        
+
+                       
                     </div>
                     <div class="essen">
                         <img src="../bilder-desser/napaleon.jpg" class="foto">
@@ -125,19 +141,25 @@
                                 eine zarte Vanillecreme auszeichnet.
                             </p>
                         </div>
-                        <button class="knopf" onclick="napoleon()">Rezept</button>
-                        <script>
-                            function napoleon() {
-                                alert('rezept')
-                            }
 
-                        </script>
-                        <button class="knopf" onclick="napoleonvideo()">Video</button>
-                        <script>
-                            function napoleonvideo() {
-                                alert('video')
-                            }
-                        </script>
+                        <!-- Popup Nopaleon Rezept -->
+                    <button id="btn-r-nopaleon" class="knopf">Rezept</button>
+                    <div id="popup-r-nopaleon" class="modal">
+                        <div class="modal-content">
+                            <span id="r-nopaleon-close" class="close">&times;</span>
+                            <a href="https://www.lecker.de/napoleon-torte-83266.html">Klicke auf das Rezept für Nopaleon</a>
+                        </div>
+                    </div>
+
+                    <!-- Popup nopaleon Video -->
+                    <button id="btn-v-nopaleon" class="knopf">Video</button>
+                    <div id="popup-v-nopaleon" class="modal">
+                        <div class="modal-content">
+                            <span id="v-nopaleon-close" class="close">&times;</span>
+                            <a href="https://youtu.be/tDhZ67ENryw?si=XuoF595Q9d8uQ7Ec">Klicke für das Video für Nopaleon</a>
+                        </div>
+                    </div>
+                       
                     </div>
 
                 </div>
@@ -156,7 +178,7 @@
             </ul>
         </nav>
     </footer>
-    <script src="../popup.js"></script>
+    <script src="../popup_dessert.js"></script>
 </body>
 
 </html>

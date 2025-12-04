@@ -72,7 +72,7 @@ h4 {
 
 .top-boxen {
     background-color: #c4bdb6;
-    padding-top: 20px;
+    padding-top: 30px;
     padding-left: 16px;
     padding-right: 16px;
     border-radius: 5px;
@@ -88,6 +88,7 @@ h4 {
     border-radius: 5px;
     margin-bottom: 16px;
     font-size: 20px;
+   
 }
 
 /* Haupt-Navigationsleiste am oberen Rand der Seite */
@@ -443,9 +444,12 @@ button {
 }
 
 input,
-textarea {
-    margin-bottom: 10px;
+ /* {
+    margin-bottom :10px;
+} */
 
+textarea{
+min-height: 60px;
 }
 
 label {
@@ -523,22 +527,29 @@ label {
 .modal-content {
   background-color: #fefefe;
   margin: auto;
-  padding: 20px;
+  padding: 50px;
   border: 1px solid #888;
-  width: 80%;
+  width: 70%;
+  font-size: 26px;
 }
 
 /* The Close Button */
 .close {
-  color: #aaaaaa;
+  color: #7c7777;
   float: right;
-  font-size: 28px;
+  font-size: 38px;
   font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-  color: #000;
+  color: #0c0a0a;
   text-decoration: none;
   cursor: pointer;
+
 }
+
+.kont{
+    font-size: 24px;
+}
+

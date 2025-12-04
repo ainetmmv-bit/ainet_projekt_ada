@@ -123,18 +123,3 @@ modalPlovVClose.addEventListener("click", () => {
     closeModal(modalPlovV)
 })
 
-
-
-// Popup für Eclair Rezept
-
-const modalEclairR = document.getElementById("popup-r-eclair");
-const btnEclairR = document.getElementById("btn-r-eclair");
-const modalEclairRClose = document.getElementById("r-eclair-close");
-
-btnEclairR.addEventListener("click", () => {
-    openModal(modalEclairR)
-})
-
-modalEclairRClose.addEventListener("click", () => {
-    closeModal(modalEclairR)
-})
