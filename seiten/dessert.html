@@ -38,34 +38,106 @@
                 <div>
                     <div class="essen">
                         <img src="../bilder-desser/eclair.jpg" class="foto">
-                        <h1>ECLAIR</h1>
-                        <p>Der Eclair ist ein französisches Gebäck, das oft als „Blitz“ bezeichnet wird, was darauf hinweist, dass es schnell gegessen werden kann.
-                             Es handelt sich um ein längliches, gefülltes Gebäck aus Brandteig, das mit Creme oder einer Glasur überzogen ist.
-                             Der Name „Eclair“ leitet sich von der schnellen Zubereitung ab, die es ähnlich macht wie den Blitz. 
+                        <div class="essen-innen">
+                            <h1>ECLAIR</h1>
+                            <p>Der Eclair ist ein französisches Gebäck, das oft als „Blitz“ bezeichnet wird,
+                                Es handelt sich um ein längliches, gefülltes Gebäck aus Brandteig, das mit Creme oder
+                                einer Glasur überzogen ist.
 
-                        </p>
+                            </p>
+                        </div>
+                            <!-- Popup Eclair Rezept -->
+                            <button id="btn-r-eclair" class="knopf">Rezept</button>
+                            <div id="popup-r-eclair" class="modal">
+                                <div class="modal-content">
+                                    <span id="r-eclair-close" class="close">&times;</span>
+                                    <a href="">Klicke auf das Rezept für Eclair</a>
+                                </div>
+                            </div>
+
+                            <!-- Popup eclair Video -->
+                            <button id="btn-v-eclair" class="knopf">Video</button>
+                            <div id="popup-v-eclair" class="modal">
+                                <div class="modal-content">
+                                    <span id="v-eclair-close" class="close">&times;</span>
+                                    <a href="">Klicke für das Video für Eclair</a>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                     <div class="essen">
                         <img src="../bilder-desser/general2.jpg" class="foto">
-                        <h1>GENERAL</h1>
-                        <p>
-                            Die General Torte ist eine Tprte mit Drei verschiedenen Tortenböden Die man frei wählen kann ,
-                            aber meist bestehen die aus Wahlnüssen,Rosinen und Mac.
+                        <div class="essen-innen">
+                            <h1>GENERAL</h1>
+                            <p>
+                                Die General Torte ist eine Tprte mit Drei verschiedenen Tortenböden Die man frei wählen
+                                kann
+                                ,
+                                aber meist bestehen die aus Wahlnüssen,Rosinen und Mac.
 
-                        </p>
+                            </p>
+                        </div>
+                        <button class="knopf" onclick="general()">Rezept</button>
+                        <script>
+                            function general() {
+                                alert('rezept')
+                            }
+
+                        </script>
+                        <button class="knopf" onclick="generalvideo()">Video</button>
+                        <script>
+                            function generalvideo() {
+                                alert('video')
+                            }
+                        </script>
                     </div>
                     <div class="essen">
                         <img src="../bilder-desser/medovik.jpg" class="foto">
-                        <h1>MEDOVIK</h1>
-                        <p>Medovik, auch bekannt als Honigkuchen ist ein traditionelles Dessert,
-                             das aus mehreren Schichten aus Honigteif und einer cremigen Füllung bestehen
+                        <div class="essen-innen">
+                            <h1>MEDOVIK</h1>
+                            <p>Medovik, auch bekannt als Honigkuchen ist ein traditionelles Dessert,
+                                das aus mehreren Schichten aus Honigteif und einer cremigen Füllung bestehen
 
-                        </p>
+                            </p>
+                        </div>
+                        <button class="knopf" onclick="medovik()">Rezept</button>
+                        <script>
+                            function medovik() {
+                                alert('rezept')
+                            }
+
+                        </script>
+                        <button class="knopf" onclick="medovikvideo()">Video</button>
+                        <script>
+                            function medovikvideo() {
+                                alert('video')
+                            }
+                        </script>
                     </div>
                     <div class="essen">
                         <img src="../bilder-desser/napaleon.jpg" class="foto">
-                        <h1>NOPALEON</h1>
-                        <p></p>
+                        <div class="essen-innen">
+                            <h1>NOPALEON</h1>
+                            <p>
+                                Die Napoleon Torte ist ein Klassiker der russichem Backkunst,
+                                der sich durch seine feine Schichten aus Blätterteig und
+                                eine zarte Vanillecreme auszeichnet.
+                            </p>
+                        </div>
+                        <button class="knopf" onclick="napoleon()">Rezept</button>
+                        <script>
+                            function napoleon() {
+                                alert('rezept')
+                            }
+
+                        </script>
+                        <button class="knopf" onclick="napoleonvideo()">Video</button>
+                        <script>
+                            function napoleonvideo() {
+                                alert('video')
+                            }
+                        </script>
                     </div>
 
                 </div>
@@ -84,7 +156,7 @@
             </ul>
         </nav>
     </footer>
-    <script src="index.js"></script>
+    <script src="../popup.js"></script>
 </body>
 
 </html>
