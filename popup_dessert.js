@@ -123,3 +123,6 @@ btnNopaleonV.addEventListener("click", () => {
 modalNopaleonVClose.addEventListener("click", () => {
     closeModal(modalNopaleonV)
 })
+
+
+
